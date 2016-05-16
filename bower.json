@@ -1,0 +1,17 @@
+{
+  "name": "quickstart-basic",
+  "description": "",
+  "main": "",
+  "authors": [
+    "luciano-jr <luciano@lucianojr.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/luciano-jr/laravel-todo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
