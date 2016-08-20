@@ -1,0 +1,20 @@
+language: php
+
+services:
+  - mysql
+
+env:
+    - RUN=phpunit
+
+script: ${RUN}
+
+php:
+    - 7.0
+
+before_script:
+    - cp .env.travis .env
+    - mysql -e 'create database homestead_test;'
+    - "composer selfupdate"
+    - "composer --version"
+    - "composer install --prefer-dist --verbose"
+    - "php artisan migrate"
